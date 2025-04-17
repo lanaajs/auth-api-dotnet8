@@ -1,0 +1,45 @@
+{
+  "info": {
+    "_postman_id": "f4589e1d-5a96-44f1-9d7d-000000000001",
+    "name": "DotNet JWT Auth",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "dotnet jwt login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"teste@dev.com\",\n  \"password\": \"123456\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/Auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "Auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
