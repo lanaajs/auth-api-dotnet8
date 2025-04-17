@@ -67,7 +67,7 @@ dotnet ef database update
 dotnet run
 ```
 
-A API estará disponível em: `https://localhost:5001` ou `http://localhost:5000`
+A API estará disponível em: `http://localhost:5000` ou `http://localhost:5400`
 
 ---
 
@@ -76,7 +76,7 @@ A API estará disponível em: `https://localhost:5001` ou `http://localhost:5000
 Acesse a documentação interativa no Swagger:
 
 ```
-https://localhost:5001/swagger
+https://localhost:5000/swagger
 ```
 
 ### 🔐 Endpoint de Login
@@ -108,10 +108,11 @@ https://localhost:5001/swagger
 ```
 API_Authentication/
 ├── Controllers/         # Endpoints da API
-├── Models/              # Modelos e DTOs
-├── Services/            # Lógica de autenticação e JWT
-├── Repositories/        # Acesso a dados
 ├── Data/                # Contexto do banco de dados
+├── Models/              # Modelos e DTOs
+├── Repositories/        # Acesso a dados
+├── Services/            # Lógica de autenticação e JWT
+├── Settings/            # Configurações
 ├── Program.cs
 ├── appsettings.json
 └── API_Authentication.csproj
@@ -121,7 +122,8 @@ API_Authentication/
 
 ## 📜 Licença
 
-Este projeto é apenas para fins educacionais.
+Este projeto foi desenvolvido exclusivamente para fins educacionais e de avaliação técnica.
+Desafio proposto para entrevista de desenvolvedora com foco em .NET 8, autenticação, segurança de APIs e migração de Java para C#.
 
 ---
 
